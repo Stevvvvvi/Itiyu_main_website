@@ -10,5 +10,9 @@ headerScrollAnmiation();
 
 // hamburger bar
 function toggleMenuShow(x) {
-  x.classList.toggle("change");
+  if (x.classList.contains("change")){
+    x.classList.remove("change")
+  }else{
+    x.classList.add("change")
+  }
 }

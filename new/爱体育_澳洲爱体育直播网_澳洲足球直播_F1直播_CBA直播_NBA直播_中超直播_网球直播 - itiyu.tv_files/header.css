@@ -93,11 +93,15 @@ a{
 .header_content .header_list .largescreen_menu a:hover{
     color:grey !important;
 }
-.header_content .header_list .largescreen_menu .hamburger{
+.header_content .header_list .largescreen_menu .hamburger_container{
     display:none;
-    cursor: pointer;
     position: relative;
     z-index: 2;
+}
+.hamburger{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
 .hamburger_bar1,
 .hamburger_bar2,
@@ -119,7 +123,7 @@ a{
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
-.hamburger .smallscreen_menu{
+.hamburger_container .smallscreen_menu{
     display:none;
     position: absolute;
     width:100px;
@@ -130,11 +134,14 @@ a{
     transition: all 0.5s ease-in-out;
     padding:20px 20px;
 }
-.hamburger.change .smallscreen_menu{
+.hamburger.change + .smallscreen_menu{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.smallscreen_menu .headers_text.smallscreen{
+    cursor: pointer;
 }
 @media only screen and (max-width:1100px) {
     .header_content .header_list .largescreen_menu{
@@ -143,7 +150,7 @@ a{
     .header_content .header_list .largescreen_menu .headers_text{
         display:none;
     }
-    .header_content .header_list .largescreen_menu .hamburger{
+    .header_content .header_list .largescreen_menu .hamburger_container{
         display: inline-block;
     }
     .header_content .header_list .largescreen_menu .headers_text.smallscreen{

@@ -28,10 +28,12 @@
 				<li class="headers_text"><a href="http://www.itiyu5.tv/channel">直播分类</a></li>
 				<li class="headers_text orange"><a href="http://www.iyingshi.tv/" target="_blank">爱影视</a></li>
                 <li class="headers_text orange"><a href="https://www.tongchengau.com/" target="_blank">澳洲同城网</a></li>
-                <li class="hamburger" onclick="toggleMenuShow(this)">
-                    <div class="hamburger_bar1"></div>
-                    <div class="hamburger_bar2"></div>
-                    <div class="hamburger_bar3"></div>
+                <div class="hamburger_container">
+                   <li class="hamburger" onclick="toggleMenuShow(this)">
+                        <div class="hamburger_bar1"></div>
+                        <div class="hamburger_bar2"></div>
+                        <div class="hamburger_bar3"></div>
+                    </li> 
                     <ul class="smallscreen_menu">
                         <li class="headers_text smallscreen currentpage"><a href="http://www.itiyu5.tv/">首页</a></li>
                         <li class="headers_text smallscreen"><a href="http://www.itiyu5.tv/mix.php">多屏直播</a></li>
@@ -40,7 +42,8 @@
                         <li class="headers_text orange smallscreen"><a href="http://www.iyingshi.tv/" target="_blank">爱影视</a></li>
                         <li class="headers_text orange smallscreen"><a href="https://www.tongchengau.com/" target="_blank">澳洲同城网</a></li>
                     </ul>
-                </li>
+                </div>
+                
 				<li class="searchbar_large">
                     <form id="search" name="search" method="post" action="https://www.iyingshi9.tv/search/">
                         <input class="search_text_area" type="text" name="wd" placeholder="输入关键字">
