@@ -5,7 +5,7 @@
 }
 
 body {
-	background: #e0e0e0;
+	background: #c4c4c4;
     font: 12px 微软雅黑, "Microsoft YaHei", HELVETICA;
     font-size:16px;
     height: 200vh;
@@ -24,7 +24,7 @@ a{
     position: fixed;
     /* overflow: hidden; */
     display: flex;
-    transition: all 0.5s;
+    transition: all 0.7s;
     z-index: 10;
 }
 .header_content.hide{
@@ -63,7 +63,7 @@ a{
     align-items: center;
     height: 90%;
     /* background: rgba(0,0,0,.); */
-    background: linear-gradient(0deg, rgba(255,255,255,0) 7%, rgba(108,108,108,1) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 10%, rgba(108,108,108,1) 100%);
 }
 
 .header_content .header_list .largescreen_menu{
@@ -86,8 +86,9 @@ a{
 .header_content .header_list .largescreen_menu li.orange a{
     color:#ff6600;
 }
-.header_content .header_list .largescreen_menu a{
+.header_content .header_list .largescreen_menu .largescreen_text a{
     transition: all 0.5s;
+    color: white;
 }
 
 .header_content .header_list .largescreen_menu a:hover{
@@ -108,7 +109,7 @@ a{
 .hamburger_bar3 {
     width: 30px;
     height: 3px;
-    background-color: #333;
+    background-color: white;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -129,7 +130,7 @@ a{
     width:100px;
     left:-60px;
     right:0;
-    background: rgba(0,0,0,.7);
+    background: rgba(0,0,0,.8);
     border-radius: 4px;
     transition: all 0.5s ease-in-out;
     padding:20px 20px;
@@ -186,7 +187,7 @@ a{
 }
 .header_content .header_list .searchbar_large .search_submit{
     position: absolute;
-    top: 7px;
+    top: 8px;
     background: linear-gradient(to right, #ff6f00, #ff9f16);
     color: #fff;
     padding: 0px 30px;
