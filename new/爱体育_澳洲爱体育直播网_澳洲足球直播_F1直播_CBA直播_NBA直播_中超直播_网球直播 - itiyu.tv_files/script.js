@@ -19,7 +19,12 @@ function toggleMenuShow(x) {
 
 // change slide video preview image's height to half of the 100% width
 $(window).on( 'resize', function () {
-  $('.slide').height( $(this).width() / 6 -8);
+  if ($(window).width()>600){
+    $('.slide').height( $(this).width() / 6 -8);
+  }else{
+    $('.slide').height( $(this).width() / 2 -18);
+  }
+  
 }).resize();
 
 
@@ -76,6 +81,24 @@ function changeMainVideo(v){
   $('#video_state').html(`${videoData[v].state}`)
   $('#video_main_href').attr("href",`${videoData[v].href}`)
 }
+
+// automatic change slider
+var slidePlaceCounter=1;
+setInterval(function(){
+  $('#radio'+slidePlaceCounter).prop('checked',true)
+  changeMainVideo(slidePlaceCounter-1)
+  slidePlaceCounter++;
+  if( slidePlaceCounter> 6){
+    slidePlaceCounter=1;
+  }
+},5000);
+
+//detect slider change manually
 $('input[type=radio][name="radio-btn"]').change(function() {
-  changeMainVideo(this.value)
+  console.log(this.value)
+  if (slidePlaceCounter!==this.value){
+    // $('#radio'+slidePlaceCounter).removeAttr('checked');
+    slidePlaceCounter=this.value;
+    changeMainVideo(this.value-1)
+  }
 });

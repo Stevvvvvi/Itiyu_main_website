@@ -4,6 +4,7 @@
     background: url('../爱体育_澳洲爱体育直播网_澳洲足球直播_F1直播_CBA直播_NBA直播_中超直播_网球直播\ -\ itiyu.tv_files/double-bubble-dark.png');
     display: flex;
     overflow: hidden;
+
 }
 .video_content .video_main_link{
     height: 100%;
@@ -27,6 +28,7 @@
 .video_content .video_main_link .main_video_overlay{
     width: fit-content;
     height: fit-content;
+    max-width: 30vw;
     position: relative;
     background:rgba(0,0,0,.8);
     border-radius: 5px;
@@ -76,12 +78,6 @@
 .content_constrain{
     max-width: 1200px;
     background: rgb(85, 85, 85);
-}
-
-@media only screen and (max-width:600px){
-    .video_content .video_main_link .main_video_overlay {
-        font-size: 70%;
-    }
 }
 
 .video_preview_wrapper{
@@ -211,7 +207,7 @@
 }
 
 .navigation_manual .manual-btn{
-    border: 2px solid #ff6600;
+    border: 3px solid #ff6600;
     padding:5px;
     border-radius: 10px;
     cursor:pointer;
@@ -278,4 +274,41 @@
 }
 #radio6:checked ~ .navigation_manual #radio6_manual{
     background: #ff6600;
+}
+
+@media only screen and (max-width:600px){
+    /* .video_content .video_main_link .main_video_overlay {
+        font-size: 70%;
+    } */
+
+    /* mobile screen no longer display main video link component */
+    .video_main_link{
+        display: none;
+    }
+    .video_preview_wrapper{
+        width:100%;
+    }
+    #radio1:checked ~ .first{
+        top: 0;
+    }
+    #radio2:checked ~ .first{
+        top: -50vw;
+    }
+    #radio3:checked ~ .first{
+        top: -100vw;
+    }
+    #radio4:checked ~ .first{
+        top: -150vw;
+    }
+    #radio5:checked ~ .first{
+        top: -200vw;
+    }
+    #radio6:checked ~ .first{
+        top: -250vw;
+    }
+    .navigation_manual .manual-btn{
+        width: 15px;
+        height: 15px;
+        border-radius: 20px;
+    }
 }
