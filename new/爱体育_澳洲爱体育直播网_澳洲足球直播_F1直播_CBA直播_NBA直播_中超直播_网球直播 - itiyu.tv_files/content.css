@@ -198,6 +198,7 @@
 }
 .more_video a{
     color: #ff6600;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
 #radio1:checked ~ .first{
