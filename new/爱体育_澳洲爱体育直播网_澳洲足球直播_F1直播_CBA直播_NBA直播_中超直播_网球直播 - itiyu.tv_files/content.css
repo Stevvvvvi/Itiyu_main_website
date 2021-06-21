@@ -188,6 +188,18 @@
     background: #ff6600;
 }
 
+.more_video{
+    border-radius: 5px;
+    transition: 2s;
+    position: relative;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 200%; 
+}
+.more_video a{
+    color: #ff6600;
+}
+
 #radio1:checked ~ .first{
     top: 0;
 }
