@@ -5,7 +5,7 @@
 }
 
 body {
-	background: #c4c4c4;
+	background: #d6d6d6;
     font: 12px 微软雅黑, "Microsoft YaHei", HELVETICA;
     font-size:16px;
     height: 200vh;
@@ -13,6 +13,10 @@ body {
 
 a{
     text-decoration: none;
+}
+
+li{
+    list-style-type: none; /* Remove bullets */
 }
 
 
