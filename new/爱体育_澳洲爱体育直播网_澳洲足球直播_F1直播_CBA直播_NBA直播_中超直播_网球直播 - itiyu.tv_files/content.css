@@ -253,6 +253,7 @@
     width: 30%;
     text-align: right;
     line-height: 70px;
+    white-space: nowrap;
 }
 .all_matches .match_box .match_list ul li .team .L span,
 .all_matches .match_box .match_list ul li .team .R span
@@ -307,6 +308,7 @@
     width: 30%;
     line-height: 70px;
     height: 70px;
+    white-space: nowrap;
 }
 
 @media only screen and (max-width:1100px) {
@@ -346,6 +348,9 @@
     }
     .all_matches .match_box .match_list ul li .btn a {
         width: 45px;
+        font-size: 60%;
+    }
+    .all_matches .match_box .match_list ul li p.name span{
         font-size: 60%;
     }
 
