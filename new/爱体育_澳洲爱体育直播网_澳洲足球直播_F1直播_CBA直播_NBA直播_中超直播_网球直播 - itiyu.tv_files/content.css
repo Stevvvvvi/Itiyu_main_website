@@ -2,6 +2,7 @@
     max-width: 1200px;
     /* background: rgb(85, 85, 85); */
     margin: auto;
+    overflow: hidden;
 }
 
 .content_constrain .advertizement{
@@ -148,4 +149,204 @@
     font-size: 17px;
     font-weight: 700;
     margin: 10px 20px;
+}
+
+.all_matches .match_box{
+    width: 100%;
+}
+
+.all_matches .match_box .match_list{
+    width: 100%;
+    margin-left: 0px;
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+}
+
+.all_matches .match_box .match_list ul li{
+    height: 72px;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    margin-bottom: 5px;
+    background: #fff;
+    border-bottom: 1px solid #eef3f8;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.all_matches .match_box .match_list ul li .btn {
+    width: 12vw;
+    height: 70px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 70px;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 100;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+
+.all_matches .match_box .match_list ul li .btn a {
+    color: #777;
+    background: #f3f3f3;
+    display: block;
+    width: 70px;
+    height: 20px;
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 20px;
+    line-height: 20px;
+    margin-left: 3vw;
+}
+
+.all_matches .match_box .match_list ul li p.name {
+    border-right: none;
+    width: 10%;
+    float: left;
+    position: relative;
+    height: 100%;
+    color: #263606;
+    line-height: 70px;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+
+.all_matches .match_box .match_list ul li p.name span {
+    font-size: 16px;
+    color: #6b6b6b;
+    display: inline;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: 70px;
+    float: left;
+    line-height: 70px;
+}
+
+.all_matches .match_box .match_list ul li .team {
+    position: relative;
+    float:left;
+    width: 80%;
+    height: 72px;
+    margin-top: 3px;
+    padding-right: 16px;
+    overflow: hidden;
+    vertical-align: middle;
+    color: #263606;
+    padding-left: 10px;
+    display: flex;
+}
+.all_matches .match_box .match_list ul li .team.nonflex_team{
+    display: block;
+}
+
+.all_matches .match_box .match_list ul li .team .L {
+    width: 30%;
+    text-align: right;
+    line-height: 70px;
+}
+.all_matches .match_box .match_list ul li .team .L span,
+.all_matches .match_box .match_list ul li .team .R span
+ {
+    height: 100%;
+    font-size: 120%;
+    margin: auto;
+    vertical-align: top;
+}
+.all_matches .match_box .match_list ul li .team img {
+    height: 40px;
+    margin-top: 13px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    max-width: 40px;
+    margin-left: 10px;
+}
+
+.all_matches .match_box .match_list ul li .team p {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0 10px;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+.all_matches .match_box .match_list ul li .team .middle {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    height: 60px;
+    line-height: 22px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.all_matches .match_box .match_list ul li .team .middle span:first-child{
+    text-align:center;
+    font-size: 13px;
+    color: #8e8e8e;
+    width:100%;
+}
+.all_matches .match_box .match_list ul li .team .middle span:nth-child(2){
+    text-align:center;
+    font-size:13px;
+}
+
+.all_matches .match_box .match_list ul li .team .R {
+    width: 30%;
+    line-height: 70px;
+    height: 70px;
+}
+
+@media only screen and (max-width:1100px) {
+    .all_matches .match_box .match_list ul li .team {
+        width:70vw;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .all_matches .match_box .match_list ul li .team {
+        width:60vw;
+    }
+    .all_matches .match_box .match_list ul li{
+        font-size: 60% !important;
+    }
+    .all_matches .match_box .match_list ul li p.name{
+        padding-left: 0;
+    }
+    .all_matches .match_box .match_list ul li .team .middle{
+        line-height: 15px;
+    }
+    .all_matches .match_box .match_list ul li .team .middle span:first-child{
+        text-align:center;
+        font-size: 3px;
+        color: #8e8e8e;
+        width:100%;
+    }
+    .all_matches .match_box .match_list ul li .team .middle span:nth-child(2){
+        text-align:center;
+        font-size:2px;
+    }
+    .all_matches .match_box .match_list ul li .team p {
+        width: 20px;
+    }
+    .all_matches .match_box .match_list ul li .team img {
+        height: 20px;
+    }
+    .all_matches .match_box .match_list ul li .btn a {
+        width: 45px;
+        font-size: 60%;
+    }
+
 }
