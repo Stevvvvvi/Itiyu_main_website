@@ -1,0 +1,19 @@
+.main_footer {
+    height: 190px;
+    width: 100%;
+    background: rgb(251,251,251);
+    background: linear-gradient(0deg, rgba(251,251,251,1) 50%, rgba(214,214,214,0) 100%);
+}
+.main_footer .txt{
+    position: relative;
+    border-top: 2px solid #feae6d;
+    width: 85%;
+    height: 65%;
+    top:35%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.main_footer .txt a{
+    color: #777;
+}
