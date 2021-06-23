@@ -12,6 +12,7 @@ body {
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 li{
@@ -94,7 +95,7 @@ li{
 }
 
 .header_content .header_list .largescreen_menu a:hover{
-    color:grey !important;
+    color:rgb(0, 207, 0) !important;
 }
 .header_content .header_list .largescreen_menu .hamburger_container{
     display:none;

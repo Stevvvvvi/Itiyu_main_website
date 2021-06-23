@@ -59,6 +59,7 @@
 }
 .tv_channels .channel_groups ul li span{
     color:black;
+    transition: 0.4s;
 }
 .tv_channels .channel_groups ul li span span.channel_more{
     padding: 2px 3px;
@@ -192,6 +193,10 @@
     -o-transition: all linear 0.2s;
     transition: all linear 0.2s;
 }
+.all_matches .match_box .match_list ul li .btn a:hover{
+    background:#ff6600;
+    color: white;
+}
 
 .all_matches .match_box .match_list ul li .btn a {
     color: #777;
@@ -205,6 +210,7 @@
     margin-top: 20px;
     line-height: 20px;
     margin-left: 3vw;
+    transition: all 0.4s;
 }
 
 .all_matches .match_box .match_list ul li p.name {
