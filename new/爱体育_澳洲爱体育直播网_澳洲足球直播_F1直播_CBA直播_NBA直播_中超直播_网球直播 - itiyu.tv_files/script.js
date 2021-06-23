@@ -106,7 +106,6 @@ $('input[type=radio][name="radio-btn"]').change(function() {
 $('.daymenu').click(function(){
   $('.daymenu').removeClass('menu_on');
   $(this).addClass('menu_on');
-  console.log($(this.id));
   $('html, body').animate({
             scrollTop: $(this.id).position().top
         }, 400);
