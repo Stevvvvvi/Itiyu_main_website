@@ -1,13 +1,22 @@
 .content_constrain{
     max-width: 1200px;
+    width: 90%;
     /* background: rgb(85, 85, 85); */
     margin: auto;
     overflow: hidden;
 }
 
-.content_constrain .advertizement{
+@media only screen and (max-width:1000px) {
+    .content_constrain{
+        width: 100%;
+    }
+}
+
+.advertizement{
     padding: 5px 0px 10px 0px;
     overflow: hidden;
+    margin: 0px auto;
+    max-width: 1200px;
 }
 
 .tv_channels{
@@ -112,6 +121,10 @@
     float: left;
     cursor: pointer;
     text-align: center;
+    transition: all 0.3s;
+}
+.match_left .match_header li:hover{
+    color:black;
 }
 
 @media only screen and (max-width:600px) {
