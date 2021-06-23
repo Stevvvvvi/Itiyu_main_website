@@ -102,3 +102,13 @@ $('input[type=radio][name="radio-btn"]').change(function() {
     changeMainVideo(this.value-1)
   }
 });
+
+$('.daymenu').click(function(){
+  $('.daymenu').removeClass('menu_on');
+  $(this).addClass('menu_on');
+  console.log($(this.id));
+  $('html, body').animate({
+            scrollTop: $(this.id).position().top
+        }, 400);
+        return false;
+})
