@@ -329,7 +329,7 @@
         padding-left: 0;
     }
     .all_matches .match_box .match_list ul li .team .middle{
-        line-height: 15px;
+        line-height: 13px;
     }
     .all_matches .match_box .match_list ul li .team .middle span:first-child{
         text-align:center;
@@ -342,10 +342,11 @@
         font-size:2px;
     }
     .all_matches .match_box .match_list ul li .team p {
-        width: 20px;
+        width: 20px !important;
     }
     .all_matches .match_box .match_list ul li .team img {
-        height: 20px;
+        height: 10px;
+        margin-left: 0px;
     }
     .all_matches .match_box .match_list ul li .btn a {
         width: 45px;
