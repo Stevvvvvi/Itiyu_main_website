@@ -247,6 +247,7 @@
 }
 .all_matches .match_box .match_list ul li .team.nonflex_team{
     display: block;
+    white-space: nowrap;
 }
 
 .all_matches .match_box .match_list ul li .team .L {
