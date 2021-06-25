@@ -166,6 +166,11 @@
 
 .video_preview .slide img{
     width: 100%;
+    transition: all 0.3s;
+}
+
+.video_preview_wrapper .video_preview .slide:hover img{
+    transform: scale(1.1);
 }
 
 .video_preview .slide .preview_overlay{
