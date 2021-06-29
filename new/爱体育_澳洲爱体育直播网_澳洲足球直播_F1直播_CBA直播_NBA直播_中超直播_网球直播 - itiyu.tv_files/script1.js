@@ -38,3 +38,31 @@ function toggleSlide(x){
   slidePlaceCounter=x.id.match(/\d+/g)[0];
 }
 
+//        broadcast scroll button logic
+$.fn.isScrollable = function () {
+  return this[0].scrollWidth > this[0].clientWidth;
+};
+
+function displaySlider(){
+  var cards=$(".broadcast_cards");
+  var sliderLeft=$('#slider_left');
+  var sliderRight=$('#slider_right');
+  if (cards.isScrollable()){
+    if (cards.scrollTop()==0){
+      sliderLeft.hide();
+    }else if (cards.scrollTop() ===(cards.scrollWidth - cards.offsetWidth)){
+      sliderRight.hide();
+    }else{
+      sliderLeft.show();
+      sliderRight.show();
+    }
+  }else{
+    sliderLeft.hide();
+    sliderRight.hide();
+  };
+}
+displaySlider()
+$(window).resize(()=>displaySlider());
+
+
+
