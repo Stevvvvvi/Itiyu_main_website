@@ -47,8 +47,6 @@ const sliderLeft=$('#slider_left');
 const sliderRight=$('#slider_right');
 
 function displaySlider(){
-  
-  // console.log(cards.isScrollable());
   if (cards.isScrollable()){
     if (cards.scrollLeft()==0){
       sliderLeft.hide();
@@ -85,7 +83,6 @@ sliderRight.click(()=>{
   }else{
     cards.animate({scrollLeft:'+=260'},300);
   }
-  
 })
 
 cards.scroll(()=>{
