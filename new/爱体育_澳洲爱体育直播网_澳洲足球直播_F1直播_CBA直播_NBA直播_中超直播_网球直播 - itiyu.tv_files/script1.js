@@ -38,7 +38,7 @@ function toggleSlide(x){
   slidePlaceCounter=x.id.match(/\d+/g)[0];
 }
 
-//        broadcast scroll button logic
+// broadcast scroll button logic
 $.fn.isScrollable = function () {
   return this[0].scrollWidth > this[0].clientWidth;
 };
