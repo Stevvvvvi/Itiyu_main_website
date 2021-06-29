@@ -71,6 +71,7 @@
 .overlay_text .slide_text .slide_small_text{
     position: absolute;
     font-weight: 100;
+    font-size: 5%;
     opacity: 0;
     transition: all 0.3s;
 }
