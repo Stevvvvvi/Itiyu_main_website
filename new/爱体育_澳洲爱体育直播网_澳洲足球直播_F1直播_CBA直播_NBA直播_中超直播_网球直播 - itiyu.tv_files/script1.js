@@ -30,7 +30,7 @@ setInterval(function(){
 
 
 function toggleSlide(x){
-  console.log(x.id.match(/\d+/g)[0]);
+  // console.log(x.id.match(/\d+/g)[0]);
   $('.slide').removeClass('active_slide');
   $(`#img_container${x.id.match(/\d+/g)[0]}`).addClass('active_slide');
   $('.slide_text').removeClass('active_text');
@@ -42,16 +42,20 @@ function toggleSlide(x){
 $.fn.isScrollable = function () {
   return this[0].scrollWidth > this[0].clientWidth;
 };
+const cards=$(".broadcast_cards");
+const sliderLeft=$('#slider_left');
+const sliderRight=$('#slider_right');
 
 function displaySlider(){
-  var cards=$(".broadcast_cards");
-  var sliderLeft=$('#slider_left');
-  var sliderRight=$('#slider_right');
+  
+  // console.log(cards.isScrollable());
   if (cards.isScrollable()){
-    if (cards.scrollTop()==0){
+    if (cards.scrollLeft()==0){
       sliderLeft.hide();
-    }else if (cards.scrollTop() ===(cards.scrollWidth - cards.offsetWidth)){
+      sliderRight.show();
+    }else if (cards.scrollLeft() == (cards[0].scrollWidth - cards[0].clientWidth)){
       sliderRight.hide();
+      sliderLeft.show();
     }else{
       sliderLeft.show();
       sliderRight.show();
@@ -61,8 +65,31 @@ function displaySlider(){
     sliderRight.hide();
   };
 }
-displaySlider()
+displaySlider();
 $(window).resize(()=>displaySlider());
 
+sliderLeft.click(()=>{
+  var postion = cards.scrollLeft()
+  if (postion<260){
+    cards.animate({scrollLeft:'0'},300);
+   
+  }else{
+    cards.animate({scrollLeft:'-=260'},300);
+  }
+})
+
+sliderRight.click(()=>{
+  var postion = cards.scrollLeft();
+  if (postion + cards[0].clientWidth + 260 > cards[0].scrollWidth){
+    cards.animate({scrollLeft: cards[0].scrollWidth },300);
+  }else{
+    cards.animate({scrollLeft:'+=260'},300);
+  }
+  
+})
+
+cards.scroll(()=>{
+  displaySlider();
+})
 
 
