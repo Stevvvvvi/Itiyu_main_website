@@ -18,6 +18,7 @@
     padding:15px 0px;
     overflow-x: auto;
     overflow-y: hidden;
+    position: relative;
 }
 .broadcast_wrapper .broadcast_cards .weekly_wrapper{
     display: flex;
@@ -38,7 +39,7 @@
     scrollbar-width: none;  /* Firefox */
 }
 .broadcast_wrapper .broadcast_cards .broadcast_simple_card{
-    width: 240px;
+    width: 250px;
     height: 100%;
     background-color: #5e5e5e;
     /* -webkit-box-shadow: inset 0px 0px 21px 8px #000000; 
@@ -135,7 +136,62 @@
     height: 33px;
     margin-top: 5px;
 }
+.slider{
+    position:absolute;
+    font-size: 80px;
+    cursor: pointer;
+    transition: all 0.4s;
+    z-index: 3;
+    height: 50%;
+    width:60px;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider:hover{
+    color:#ff6600;
+}
+
+#slider_left{
+    left:0px;
+    text-align: left;
+}
+#slider_right{
+    right:0px;
+    text-align: right;
+}
+#slider_left::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgb(255,255,255,.2);
+    background: radial-gradient(ellipse at left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+#slider_right::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgb(255,255,255,.2);
+    background: radial-gradient(ellipse at right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.slider:hover::after{
+    opacity: 1 !important;
+}
+
 
 .week_bar{
-    
+
 }
