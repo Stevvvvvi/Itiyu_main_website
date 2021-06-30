@@ -90,3 +90,13 @@ cards.scroll(()=>{
 })
 
 
+// logic for menu placement
+$('.daymenu').click(function(){
+  $('.daymenu').removeClass('menu_on');
+  $(this).addClass('menu_on');
+  $('html, body').animate({
+            scrollTop: $(this.id).position().top
+        }, 400);
+        return false;
+})
+
