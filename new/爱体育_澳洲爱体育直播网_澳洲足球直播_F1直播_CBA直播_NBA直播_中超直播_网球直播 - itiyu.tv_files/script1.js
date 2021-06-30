@@ -91,12 +91,16 @@ cards.scroll(()=>{
 
 
 // logic for menu placement
-$('.daymenu').click(function(){
-  $('.daymenu').removeClass('menu_on');
-  $(this).addClass('menu_on');
-  $('html, body').animate({
-            scrollTop: $(this.id).position().top
-        }, 400);
-        return false;
+$('.weeks').click(function(){
+  $('.weeks').removeClass('active');
+  $(this).addClass('active');
+  // $('html, body').animate({
+  //           scrollTop: $(this.id).position().top
+  //       }, 400);
+  //       return false;
+  $('.weekly_wrapper').addClass("hide");
+  // $(this.id).fadeIn();
+  $(this.id).removeClass("hide");
+  displaySlider();
 })
 
