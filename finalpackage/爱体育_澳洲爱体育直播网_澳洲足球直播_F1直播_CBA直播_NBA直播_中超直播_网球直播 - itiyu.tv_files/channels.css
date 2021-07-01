@@ -1,0 +1,71 @@
+.channels_wrapper{
+    position: relative;
+    width:100%;
+    height: 0px;
+    padding-bottom: 65px;
+    z-index: 3;
+}
+.channels{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-fit-content;  /* firefox */
+    height: intrinsic;
+    height: -moz-fit-content;
+    margin:auto;
+    /* background: rgba(22,22,26,0.4); */
+    top:-50px;
+    display: flex;
+    line-height: 1.8;
+    white-space:nowrap;
+    flex-wrap: wrap;
+    z-index: 3;
+    padding: 0px 15px;
+}
+.channels div ul{
+    display: grid;
+    
+}
+.channels div ul li{
+    margin-right: 2vw;
+}
+.channels div ul li a{
+    transition: all 0.3s;
+}
+.channels div ul li:hover a{
+    color:rgb(0, 207, 0);
+}
+.channels .channel_group_container{
+    display: flex;
+    height: 85px;
+
+}
+.channels .channel_group_container .channel_separate{
+    width: 1px;
+    height: 100%;
+    background: white;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,hsla(0,0%,100%,0)),color-stop(.31,hsla(0,0%,100%,.5)),color-stop(.56,hsla(0,0%,100%,.5)),color-stop(1,hsla(0,0%,100%,0)));
+    margin-right: 2vw;
+}
+.channels .hot_channels ul{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.channels .basketball_channels ul,
+.channels .other_channels ul
+{
+    grid-template-columns: 1fr 1fr;
+}
+.channels .football_channels ul{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.channels div .channel_group_title{
+    color: #ff6600;
+    font-weight: 900;
+}
+.advertizement{
+    padding: 5px 0px 10px 0px;
+    overflow: hidden;
+    margin: 0px auto;
+    max-width: 1200px;
+}

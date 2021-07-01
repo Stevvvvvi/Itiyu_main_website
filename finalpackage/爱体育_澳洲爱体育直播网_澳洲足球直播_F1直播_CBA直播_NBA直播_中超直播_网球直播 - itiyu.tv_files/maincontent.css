@@ -1,0 +1,180 @@
+.main_content{
+    padding: 20px 15px;
+    box-sizing: border-box;
+    width:100%;
+    max-width: 1800px;
+    margin:auto;
+}
+.section_title{
+    display: flex;
+    
+}
+.section_title span{
+    padding-left: 20px;
+    align-self: flex-end;
+}
+.video_content{
+    padding-top: 10px;
+    display: flex;
+}
+
+.video_section{
+    width: 96%;
+    margin:auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    max-width: 1780px;
+    box-sizing: border-box;
+}
+/* .video_content{
+    height: fit-content;
+} */
+.large_video{
+    border-radius: 5px;
+    background: #3a3a3a;
+    width: 460px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.large_video .screenshot{
+    max-height: 230px;
+    overflow: hidden;
+}
+.large_video .screenshot img{
+    width: 100%;
+    transition: all 0.3s;
+}
+.large_video .screenshot:hover img{
+    transform: scale(1.2);
+}
+.small_videos{
+    /* background: pink; */
+    width: calc(100% - 460px);
+    padding: 0px 0px 0px 10px
+}
+.large_video .txtbox{
+    padding:20px 5px;
+}
+.txtbox:hover p a{
+    transition: all 0.3s;
+}
+.txtbox:hover p a{
+    color:#ff6600;
+}
+.large_video .txtbox .small_desc{
+    font-size: 80%;
+    color: #818181;
+    padding-right: 2px;
+}
+
+.small_video_wrapper{
+    width: 100%;
+    height: 100%;
+
+}
+.top_videos, .bottom_videos{
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    overflow: hidden;
+}
+
+.top_videos .v-item, .bottom_videos .v-item{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.top_videos .v-item .screenshot, .bottom_videos .v-item .screenshot{
+    width: 100%;
+    max-height: 118.92px;
+    max-width: 237.84px;
+    height: 5.94vw;
+    overflow: hidden;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.top_videos .v-item .screenshot img, .bottom_videos .v-item .screenshot img{
+    width: 100%;
+}
+.top_videos .v-item .txtbox, .bottom_videos .v-item .txtbox{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width:1470px){
+    .top_videos, .bottom_videos{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .top_videos .v-item .screenshot, .bottom_videos .v-item .screenshot{
+        height: 6.92vw;
+        max-height: 109.3px;
+        max-width: 218.59px;
+    }
+    .top_videos .v-item.item_five, .bottom_videos .v-item.item_five {
+        display: none;
+    }
+}
+@media only screen and (max-width:1300px) {
+    .video_section{
+        width: 90%;
+    }
+    .large_video{
+        width: 40%;
+    }
+    .small_videos{
+        width:60%;
+    }
+    .top_videos, .bottom_videos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .top_videos .v-item.item_four, .bottom_videos .v-item.item_four, 
+    .top_videos .v-item.item_five, .bottom_videos .v-item.item_five {
+        display: none;
+    }
+    .top_videos .v-item .screenshot, .bottom_videos .v-item .screenshot{
+        height: 8vw;
+        max-height: 109.3px;
+        max-width: 218.59px;
+    }
+}
+@media only screen and (max-width:800px){
+    .top_videos .v-item .txtbox, .bottom_videos .v-item .txtbox{
+        font-size: 80%;
+    }
+}
+@media only screen and (max-width:600px) {
+    .video_section{
+        width: 100%;
+    }
+    .large_video{
+        width: 100%;
+    }
+    .video_content{
+        flex-direction: column;
+    }
+    .small_videos{
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    .top_videos, .bottom_videos{
+        grid-template-columns: 1fr 1fr;
+    }
+    .top_videos .v-item .screenshot, .bottom_videos .v-item .screenshot{
+        max-width: 300px;
+        height: 22.9vw;
+        width:100%;
+        max-height: 150px;
+    }
+    .top_videos .v-item.item_four, .bottom_videos .v-item.item_four,
+    .top_videos .v-item.item_five, .bottom_videos .v-item.item_five,
+    .top_videos .v-item.item_three, .bottom_videos .v-item.item_three{
+        display: none;
+    }
+    .top_videos .v-item .txtbox, .bottom_videos .v-item .txtbox{
+        font-size: 100%;
+    }
+}
