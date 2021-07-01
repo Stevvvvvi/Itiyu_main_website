@@ -44,7 +44,7 @@
     width: 100%;
     transition: all 0.3s;
 }
-.large_video .screenshot:hover img{
+.screenshot:hover img{
     transform: scale(1.2);
 }
 .small_videos{
@@ -97,6 +97,7 @@
 }
 .top_videos .v-item .screenshot img, .bottom_videos .v-item .screenshot img{
     width: 100%;
+    transition: all 0.3s;
 }
 .top_videos .v-item .txtbox, .bottom_videos .v-item .txtbox{
     width: 100%;
