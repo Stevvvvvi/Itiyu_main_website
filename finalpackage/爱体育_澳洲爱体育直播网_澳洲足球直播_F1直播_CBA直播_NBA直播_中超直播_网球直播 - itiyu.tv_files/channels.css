@@ -30,6 +30,11 @@
 .channels div ul li{
     margin-right: 2vw;
 }
+@media only screen and (max-width: 980px){
+    .channels div ul li{
+        margin-right: 10px;
+    }
+}
 .channels div ul li a{
     transition: all 0.3s;
 }
