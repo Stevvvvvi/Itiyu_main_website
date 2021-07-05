@@ -116,7 +116,7 @@ $(".fixed_button")
 $('#backtotop').click((e)=>{
   e.preventDefault();
   $('html, body').animate({ scrollTop:0 }, 'slow');
-
+  removePortal()
 })
 
 // portal text display
