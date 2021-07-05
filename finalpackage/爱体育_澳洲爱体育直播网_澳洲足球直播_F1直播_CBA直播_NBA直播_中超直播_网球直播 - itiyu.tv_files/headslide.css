@@ -1,6 +1,7 @@
 .head_slide{
     width:100%;
-    height: 500px;
+    height: 68vh;
+    min-height: 400px;
     background: yellow;
     align-items: center;
     position: relative;
@@ -26,6 +27,7 @@
     width: 100%;
     background-repeat: no-repeat;
     background-position: center top;
+    background-size: cover;
     background-color: #16161a;
 }
 .head_slide .slides .slide#img_container1 a div{
