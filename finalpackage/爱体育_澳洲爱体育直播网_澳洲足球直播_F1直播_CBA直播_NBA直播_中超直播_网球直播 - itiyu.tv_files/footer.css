@@ -4,7 +4,7 @@
     width: 100%;
     background: rgb(22, 22, 26);
     /* background: linear-gradient(0deg, rgba(22, 22, 26,1) 80%, rgba(22, 22, 26,0.8) 100%); */
-    z-index: -1;
+    /* z-index: -1; */
     
 }
 /* .main_footer::before{
