@@ -1,0 +1,31 @@
+.fixed_button{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    /* background:blue; */
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 10;
+    transition: all 0.4s
+}
+.fixed_button.disactive{
+    transform: translateX(90px);
+}
+.fixed_button img{
+    width: 100%;
+    height: auto;
+
+}
+.fixed_portal{
+    visibility:visible;
+    position: fixed;
+    transition: all 0.4s;
+    background: #ff6600; 
+    border-radius: 10px;
+    padding: 10px 10px;
+    transform:scale(0.1);
+    transform-origin:center right;
+
+}

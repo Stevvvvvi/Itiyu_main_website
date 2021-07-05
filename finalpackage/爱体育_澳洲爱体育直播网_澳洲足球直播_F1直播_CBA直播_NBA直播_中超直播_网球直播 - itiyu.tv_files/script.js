@@ -104,3 +104,31 @@ $('.weeks').click(function(){
   displaySlider();
 })
 
+// backtoTop button logic
+$(window).scroll(()=>{
+  if($(window).scrollTop()>400){
+    $('.fixed_button').removeClass('disactive');
+  }else{
+    $('.fixed_button').addClass('disactive');
+  }
+});
+$(".fixed_button")
+$('#backtotop').click((e)=>{
+  e.preventDefault();
+  $('html, body').animate({ scrollTop:0 }, 'slow');
+
+})
+
+// portal text display
+function hoverPortal(htmlElement,text){
+  const rect=htmlElement.getBoundingClientRect();
+  const portal=$(".fixed_portal");
+  portal.html(text);
+  portal.css({top:`${rect.top+10}px`,left:`${rect.left-90}px`,visibility:'visible',transform:'scale(1)'});
+
+}  
+
+function removePortal(){
+  $(".fixed_portal").css({visibility:'hidden',transform:'scale(0.1)'});
+}
+
