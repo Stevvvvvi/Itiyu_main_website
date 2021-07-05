@@ -2,7 +2,7 @@
 function headerScrollAnmiation(){
     var scrollPosition=0;
     $(window).on('scroll', function(){
-      $('.header_content').toggleClass('hide', $(window).scrollTop()>scrollPosition);
+      $('.header_content').toggleClass('hide', $(window).scrollTop()>scrollPosition && $(window).scrollTop()>0);
       scrollPosition=$(window).scrollTop();
     })
 }
