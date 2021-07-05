@@ -113,10 +113,15 @@
         right: -19vw;
     }
 }
+@media only screen and (min-width:1400px) {
+    .overlay_text{
+        width: 400px;
+    }
+}
 
 @media only screen and (min-width:2200px) {
     .overlay_text{
         left: 730px;
-        width: 400px;
+        width: 600px;
     }
 }
