@@ -27,7 +27,7 @@
     width: 100%;
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: cover;
+    background-size: auto 100%;
     background-color: #16161a;
 }
 .head_slide .slides .slide#img_container1 a div{
@@ -117,5 +117,6 @@
 @media only screen and (min-width:2200px) {
     .overlay_text{
         left: 730px;
+        width: 400px;
     }
 }
