@@ -1,17 +1,27 @@
 .fixed_button{
     position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 30px;
+    width: 50px;
+    height: 110px;
+    bottom: 20px;
     right: 30px;
-    /* background:blue; */
-    border-radius: 20px;
-    overflow: hidden;
+    border-radius: 40px;
+    /* overflow: hidden; */
     z-index: 10;
-    transition: all 0.4s
+    transition: all 0.4s;
+    /* pointer-events: none; */
 }
-.fixed_button.disactive{
+.fixed_button a.disactive{
     transform: translateX(90px);
+}
+.fixed_button a{
+    position:relative;
+    height: auto;
+    
+    transition: all 0.4s;
+    white-space: nowrap;
+}
+.fixed_button a:first-child{
+    padding-bottom: 10px;
 }
 .fixed_button img{
     width: 100%;

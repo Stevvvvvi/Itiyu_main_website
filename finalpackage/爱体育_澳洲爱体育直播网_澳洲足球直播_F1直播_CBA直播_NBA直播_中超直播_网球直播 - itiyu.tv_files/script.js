@@ -107,12 +107,12 @@ $('.weeks').click(function(){
 // backtoTop button logic
 $(window).scroll(()=>{
   if($(window).scrollTop()>400){
-    $('.fixed_button').removeClass('disactive');
+    $('#backtotop').removeClass('disactive');
   }else{
-    $('.fixed_button').addClass('disactive');
+    $('#backtotop').addClass('disactive');
   }
 });
-$(".fixed_button")
+
 $('#backtotop').click((e)=>{
   e.preventDefault();
   $('html, body').animate({ scrollTop:0 }, 'slow');
@@ -124,7 +124,7 @@ function hoverPortal(htmlElement,text){
   const rect=htmlElement.getBoundingClientRect();
   const portal=$(".fixed_portal");
   portal.html(text);
-  portal.css({top:`${rect.top+10}px`,left:`${rect.left-90}px`,visibility:'visible',transform:'scale(1)'});
+  portal.css({top:`${rect.top+portal.outerHeight()/2-15}px`,left:`${rect.left-portal.outerWidth()}px`,visibility:'visible',transform:'scale(1)'});
 
 }  
 
